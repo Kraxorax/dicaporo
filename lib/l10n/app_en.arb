@@ -1,0 +1,9 @@
+{
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting",
+    "type": "text"
+  },
+  "appName": "Milyfam",
+  "buttonPushCounter": "You have pushed the button this many times:",
+  "helloWorld": "Hello World"
+}

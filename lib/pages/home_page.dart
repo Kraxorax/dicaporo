@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:dicaporo/pages/landing_page.dart';
 
 class DPHomePage extends StatefulWidget {
@@ -114,8 +114,8 @@ class DPHomePageState extends State<DPHomePage> {
             // horizontal).
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text(
-                'You have pushed the button this many times:',
+              Text(
+                AppLocalizations.of(context)!.buttonPushCounter,
               ),
               Text(
                 '$counter',

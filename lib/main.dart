@@ -1,6 +1,7 @@
 import 'package:dicaporo/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:dicaporo/pages/home_page.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
   runApp(const DicaporoApp());
@@ -13,7 +14,9 @@ class DicaporoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Dicaporo Title',
+      localizationsDelegates: AppLocalizations.localizationsDelegates,
+      supportedLocales: AppLocalizations.supportedLocales,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,7 +31,7 @@ class DicaporoApp extends StatelessWidget {
       ),
       // initialRoute: '/',
       routes: routes,
-      home: const DPHomePage(title: 'Dicaporo'),
+      home: const DPHomePage(title: 'Dicaporo Home Page'),
     );
   }
 }
