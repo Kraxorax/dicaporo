@@ -1,3 +1,4 @@
+import 'package:dicaporo/pages/main_container.dart';
 import 'package:dicaporo/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:dicaporo/pages/home_page.dart';
@@ -27,11 +28,12 @@ class DicaporoApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.brown,
       ),
       // initialRoute: '/',
       routes: routes,
-      home: const DPHomePage(title: 'Dicaporo Home Page'),
+      home: const DPMMainContainer(
+          title: 'Main cont', body: DPHomePage(title: 'Dicaporo Home Page')),
     );
   }
 }
