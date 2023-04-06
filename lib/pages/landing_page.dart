@@ -6,8 +6,14 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('LANDING PAGE'),
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const <Widget>[
+          Text('LANDING PAGE'),
+          Text('Shown only one time when app is first installed'),
+        ],
+      ),
     );
   }
 }
