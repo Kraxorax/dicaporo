@@ -1,8 +1,8 @@
 import 'package:dicaporo/routes.dart';
 import 'package:flutter/material.dart';
 
-class DPBottomBar extends StatelessWidget {
-  const DPBottomBar({super.key});
+class BottomNavBar extends StatelessWidget {
+  const BottomNavBar({super.key});
 
   @override
   Widget build(BuildContext context) {

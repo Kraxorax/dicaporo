@@ -11,6 +11,7 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
+  int counter = 0;
   bool menuOpen = false;
 
   void openMenu() {
@@ -33,7 +34,7 @@ class HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(
-            AppLocalizations.of(context)!.buttonPushCounter,
+            AppLocalizations.of(context)!.buttonPushCounter(counter),
           ),
         ],
       ),

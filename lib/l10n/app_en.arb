@@ -1,9 +1,76 @@
 {
+  "@@locale": "en",
+  "appName": "Dicaporo",
+  "helloWorld": "Hello World",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting",
     "type": "text"
   },
-  "appName": "Milyfam",
-  "buttonPushCounter": "You have pushed the button this many times:",
-  "helloWorld": "Hello World"
+  "buttonPushCounter": "{count, plural, zero{Push the button!} one{MORE!} two{YES!} other{You have pushed the button {count} times}}",
+  "@buttonPushCounter": {
+    "type": "text",
+    "context": "Home screen:Main message",
+    "description": "The number of times the user has pushed the button",
+    "placeholders": {
+      "count": {
+        "example": "1",
+        "description": "The number of times the user has pushed the button"
+      }
+    }
+  },
+  "pageLoginUsername": "Your username",
+  "@pageLoginUsername": {},
+  "pageLoginPassword": "Your password",
+  "@pageLoginPassword": {},
+  "pageHomeTitle": "Welcome {firstName}",
+  "@pageHomeTitle": {
+    "description": "Welcome message on the Home screen",
+    "placeholders": {
+      "firstName": {}
+    }
+  },
+  "pageHomeInboxCount": "{count, plural, zero{You have no new messages} one{You have 1 new message} other{You have {count} new messages}}",
+  "@pageHomeInboxCount": {
+    "description": "New messages count on the Home screen",
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "pageHomeBirthday": "{sex, select, male{His birthday} female{Her birthday} other{Their birthday}}",
+  "@pageHomeBirthday": {
+    "description": "Birthday message on the Home screen",
+    "placeholders": {
+      "sex": {}
+    }
+  },
+  "commonVehicleType": "{vehicleType, select, sedan{Sedan} cabriolet{Solid roof cabriolet} truck{16 wheel truck} other{Other}}",
+  "@commonVehicleType": {
+    "description": "Vehicle type",
+    "placeholders": {
+      "vehicleType": {}
+    }
+  },
+  "z1": "// resource id can reuse the dom id of a element whose text content should ",
+  "z2": "// be replaced by this string.",
+  "title_bar": "My Cool Home",
+  "@title_bar": {
+    "type": "text",
+    "context": "HomePage",
+    "description": "Page title."
+  },
+  "z3": "// A typical text string that JS code can reference directly.",
+  "msgOk": "Everything works fine.",
+  "z4": "// A message that contains placeholder, referenced by JS code.",
+  "msgFoo": "Your pending cost is {COST}",
+  "@msgFoo": {
+    "type": "text",
+    "context": "HomePage:MainPanel",
+    "description": "balance statement.",
+    "placeholders": {
+      "COST": {
+        "example": "$123.45",
+        "description": "cost presented with currency symbol"
+      }
+    }
+  }
 }
