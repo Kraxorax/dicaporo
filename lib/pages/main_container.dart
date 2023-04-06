@@ -1,18 +1,18 @@
 import 'package:dicaporo/widgets/bars/bottom_bar.dart';
 import 'package:flutter/material.dart';
 
-class DPMMainContainer extends StatefulWidget {
-  const DPMMainContainer({super.key, required this.title, required this.body});
+class MainContainer extends StatefulWidget {
+  const MainContainer({super.key, required this.title, required this.body});
 
   final String title;
 
   final Widget body;
 
   @override
-  State<DPMMainContainer> createState() => DPMMainContainerState();
+  State<MainContainer> createState() => MainContainerState();
 }
 
-class DPMMainContainerState extends State<DPMMainContainer> {
+class MainContainerState extends State<MainContainer> {
   Widget buildPopupMenuButton() {
     return PopupMenuButton<int>(
       itemBuilder: (BuildContext context) => [

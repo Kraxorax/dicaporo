@@ -6,13 +6,8 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Welcome title'),
-      ),
-      body: const Center(
-        child: Text('Welcome body'),
-      ),
+    return const Center(
+      child: Text('LANDING PAGE'),
     );
   }
 }

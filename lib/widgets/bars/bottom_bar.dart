@@ -3,10 +3,8 @@ import 'package:flutter/material.dart';
 class DPBottomBar extends StatelessWidget {
   final Map<int, String> navBarItemIndexToPageName = {
     0: '/',
-    1: '/landing',
-    2: '/landing',
-    3: '/landing',
-    4: '/landing',
+    1: '/chores',
+    2: '/school',
   };
 
   DPBottomBar({super.key});
@@ -23,7 +21,7 @@ class DPBottomBar extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.business),
-          label: 'Business',
+          label: 'Chores',
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.school),
