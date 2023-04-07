@@ -49,28 +49,5 @@
     "placeholders": {
       "vehicleType": {}
     }
-  },
-  "z1": "// resource id can reuse the dom id of a element whose text content should ",
-  "z2": "// be replaced by this string.",
-  "title_bar": "My Cool Home",
-  "@title_bar": {
-    "type": "text",
-    "context": "HomePage",
-    "description": "Page title."
-  },
-  "z3": "// A typical text string that JS code can reference directly.",
-  "msgOk": "Everything works fine.",
-  "z4": "// A message that contains placeholder, referenced by JS code.",
-  "msgFoo": "Your pending cost is {COST}",
-  "@msgFoo": {
-    "type": "text",
-    "context": "HomePage:MainPanel",
-    "description": "balance statement.",
-    "placeholders": {
-      "COST": {
-        "example": "$123.45",
-        "description": "cost presented with currency symbol"
-      }
-    }
   }
 }
