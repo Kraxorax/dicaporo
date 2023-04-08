@@ -18,7 +18,7 @@ class MainContainerState extends State<MainContainer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: TopBar(),
+      appBar: buildTopBar(context, widget.title),
       body: widget.body,
       bottomNavigationBar: const BottomNavBar(),
     );

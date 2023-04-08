@@ -18,6 +18,17 @@
       }
     }
   },
+  "fake": "|{fake}|",
+  "@fake": {
+    "description": "Placeholder for strings that are not yet translated",
+    "type": "text",
+    "placeholders": {
+      "fake": {
+        "example": "Anything",
+        "description": "Should fit it's context in the app"
+      }
+    }
+  },
   "pageLoginUsername": "Your username",
   "@pageLoginUsername": {},
   "pageLoginPassword": "Your password",

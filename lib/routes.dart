@@ -1,3 +1,4 @@
+import 'package:dicaporo/pages/chores_page.dart';
 import 'package:dicaporo/pages/home_page.dart';
 import 'package:dicaporo/pages/landing_page.dart';
 import 'package:dicaporo/pages/main_container.dart';
@@ -11,18 +12,9 @@ class DicaporoRoutes {
 }
 
 Map<String, WidgetBuilder> routesToPages = {
-  DicaporoRoutes.home: (context) => const MainContainer(
-        title: 'H o m e',
-        body: HomePage(title: 'home page'),
-      ),
+  DicaporoRoutes.home: (context) => const HomePage(title: 'home page'),
+  DicaporoRoutes.chores: (context) => const ChoresPage(title: 'chores page'),
+  DicaporoRoutes.school: (context) => const HomePage(title: 'school page'),
   DicaporoRoutes.landing: (context) =>
       const MainContainer(title: 'landing page', body: LandingPage()),
-  DicaporoRoutes.chores: (context) => const MainContainer(
-        title: 'C h o r e s',
-        body: HomePage(title: 'chores page'),
-      ),
-  DicaporoRoutes.school: (context) => const MainContainer(
-        title: 'S c h o o l',
-        body: HomePage(title: 'school page'),
-      )
 };
